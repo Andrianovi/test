@@ -1,0 +1,248 @@
+@charset "UTF-8";
+html {
+	box-sizing: border-box;
+	width: 100vw;
+}
+
+*,
+*::before,
+*::after {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 0;
+	font-weight: 600;
+
+	line-height: 1.2;
+	font-size-adjust: 0.5;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+}
+
+body {
+	width: 100vw;
+}
+
+::-webkit-scrollbar {
+	width: 0;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+}
+
+input[type="number"],
+input[type="number"]:hover,
+input[type="number"]:focus {
+	-webkit-appearance: none;
+	appearance: none;
+	-moz-appearance: textfield;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	background: #000;
+	height: 100vh;
+	height: 100dvh;
+	justify-content: space-between;
+	padding: 20px 40px;
+}
+.header {
+	width: 100%;
+	max-width: 1200px;
+}
+.header-cnt {
+	display: flex;
+	justify-content: space-between;
+	background-color: #343434;
+	width: 100%;
+	height: auto;
+	padding: 20px 40px;
+}
+.header-button {
+	display: block;
+	width: 170px;
+	height: 45px;
+	background-color: #999;
+	border-radius: 5px;
+}
+button {
+	height: 100%;
+	width: 100%;
+	background-color: transparent;
+}
+button p {
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 20px;
+	font-weight: 600;
+}
+.header-rightBlock {
+	display: flex;
+	gap: 30px;
+}
+.bufferZone {
+	width: 100%;
+	height: calc((100vh - 85px - 120px) / 2);
+	max-width: 1200px;
+	background-color: #343434;
+	padding: 10px;
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+.bufferZone-cnt {
+	width: 100%;
+	height: auto;
+	margin: auto;
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 15px;
+	align-items: center;
+	justify-content: center;
+}
+.bufferZone-cnt div {
+	position: relative;
+}
+.div-svg {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.div-svg-ex {
+	width: 400px;
+	height: 300px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+.workZone {
+	width: 100%;
+	height: calc((100vh - 85px - 40px) / 2);
+	max-width: 1200px;
+	background-color: #676767;
+}
+.workZone-cnt {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.workZone-upBlock {
+	display: flex;
+	width: 100%;
+	height: 100%;
+}
+.workZone-markupLeft {
+	height: 100%;
+	width: 30px;
+	overflow: hidden;
+	position: relative;
+}
+.workZone-markupLeft-cnt {
+	position: absolute;
+	left: 0;
+	bottom: 0px;
+	height: 1000px;
+	width: 100%;
+}
+.workZone-markupLeft-cnt .workZone-markup-number {
+	width: 100%;
+	height: 100px;
+}
+.workZone-markup-number {
+	position: relative;
+}
+.workZone-markupLeft-cnt p {
+	top: 0;
+	right: 3px;
+	transform: translateY(-50%);
+}
+.workZone-markup-number p {
+	position: absolute;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 20px;
+}
+.workZone-area {
+	position: relative;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+}
+.workZone-area-cnt {
+	display: grid;
+	grid-template-rows: repeat(10, 1fr);
+	grid-template-columns: repeat(15, 1fr);
+	align-items: center;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 1500px;
+	height: 1000px;
+}
+.workZone-area-cnt p {
+	display: block;
+	width: 100px;
+	height: 100px;
+	background-color: #343434;
+	border: 1px solid #676767;
+}
+.workZone-area-dragDrop {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+.workZone-downBlock {
+	display: flex;
+	height: 30px;
+	width: 100%;
+}
+.workZone-zero {
+	position: relative;
+	height: 100%;
+	width: 30px;
+}
+.workZone-zero p {
+	position: absolute;
+	top: 0;
+	right: 3px;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 20px;
+}
+.workZone-markupBottom {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+.workZone-markupBottom-cnt {
+	display: flex;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 1500px;
+	height: 100%;
+}
+.workZone-markupBottom-cnt .workZone-markup-number {
+	width: 100px;
+	height: 100%;
+}
+.workZone-markupBottom-cnt p {
+	top: 0px;
+	right: 0;
+	transform: translateX(50%);
+}
